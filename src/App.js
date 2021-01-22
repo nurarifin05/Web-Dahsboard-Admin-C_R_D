@@ -1,18 +1,18 @@
-import React from 'react';
-import Button from '@material-ui/core/Button';
+import React, {Component} from 'react';
 import './App.css';
-import LayoutTemplate from './containers/template/Layout';
 import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom'
 import LoginPage from './containers/template/loginPage';
+import DashboardTemplate from './containers/template/DashboardTemplate';
 
 
 function App() {
   return (
     <Router>
       <Switch>
-      <Route path="/dashboard" component={LayoutTemplate} />
-        <Route path="/" component={LoginPage} />
+      <Route exact path="/" component={LoginPage} />
+      <Route  path="/dashboard" component={DashboardTemplate} />
         
+       
       </Switch>
     </Router>
     

@@ -1,7 +1,9 @@
-import Menu1 from "../components/Pages/menu1"
+import Menu1 from "../components/Pages/menu1/menu1"
+import updateMenu1 from "../components/Pages/menu1/updateMenu1"
 import Menu2 from "../components/Pages/menu2"
 import Menu3 from "../components/Pages/menu3"
 import Menu4 from "../components/Pages/menu4"
+
 
 
 export const router = [
